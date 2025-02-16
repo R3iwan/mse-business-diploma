@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - Business Automation{% endblock %}
+
+{% block content %}
+    <!-- Banner Section -->
+    <div class="main-banner header-text">
+        <div class="Modern-Slider">
+          <div class="item">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h4>Automate & Manage Your Business</h4>
+                  <p>Streamline operations, track orders, and enhance customer engagement.</p>
+                  <a href="{% url 'services' %}" class="filled-button">Explore Services</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{% static 'images/service_01.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Order Management</h4>
+                <p>Track, categorize, and fulfill orders in real-time with automated processing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{% static 'images/service_02.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Customer Management</h4>
+                <p>Keep track of customer orders and automate interactions for better service.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{% static 'images/service_03.jpg' %}" alt="">
+              <div class="down-content">
+                <h4>Business Analytics</h4>
+                <p>Get real-time insights on your business performance and optimize decisions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
